@@ -1,26 +1,13 @@
 # Image Processing Application
 
-This is a Python application designed to process PNG images based on user-defined parameters. The application provides a menu for selecting various image processing options and includes functionality to check the resolution of images before processing.
+Python application designed to process PNG images based on user-defined parameters. It is tailored for social media illustrators who keep private high-resolution images behind paywalls and still want to offer a lower resolution version for the public. The application includes a CLI menu for selecting processing options and functionality to check the resolution of images before processing.
 
 ## Features
 
-- Process PNG images for different social media platforms (e.g., Twitter, Instagram).
-- Check the resolution of images and prompt for confirmation if the resolution is low.
-- User-friendly menu for selecting processing tasks.
-
-## Project Structure
-
-```
-image-processing-app
-├── src
-│   ├── main.py            # Entry point of the application
-│   ├── image_processor.py  # Contains the ImageProcessor class for image processing
-│   ├── menu.py            # Displays the menu for user options
-│   └── utils
-│       └── resolution_checker.py  # Checks image resolution
-├── requirements.txt       # Lists project dependencies
-└── README.md              # Project documentation
-```
+- Optimize PNG images for different social media platforms (e.g., Twitter, Instagram).
+- Check the resolution of images and prompt for confirmation if the resolution is less than A3/300dpi.
+- CLI menu for option selection.
+- Drag-and-drop images into file for silent, background processing.
 
 ## Installation
 
@@ -37,16 +24,16 @@ image-processing-app
 
 ## Usage
 
-To run the application, execute the following command in your terminal:
+To run the application, either execute the following command in your terminal:
 ```
 python src/main.py
 ```
-
 If no parameters are provided, the application will prompt you for input.
 
-## Contributing
+OR
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+Drag and drop a PNG image file on main.py, this will generate all versions of the image.
+
 
 ## License
 
